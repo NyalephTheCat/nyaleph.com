@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-    export function load({ error, status}: {error:Error, status:Number}) {
+    export function load({ error, status}) {
         return {
             props: {
                 title: `${status}: ${error.message}`
@@ -9,7 +9,7 @@
 </script>
 
 <script lang="ts">
-    export let title: String;
+    export let title;
 </script>
 
 <h1>Uh oh!</h1>
