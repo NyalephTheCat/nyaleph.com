@@ -12,6 +12,8 @@
     export let title;
 </script>
 
+<div class="align-middle">
 <h1>Uh oh!</h1>
 <p>There must be an error. If you think you should have gotten to a normal page, please contact me!</p>
-<p style="color:red;">{title}</p>
+<p style:color="#D81E5B">{title}</p>
+</div>

@@ -6,16 +6,19 @@
         Navbar,
         NavItem
     } from 'sveltestrap';
+
+    const links = [
+        {path: "/contact", display: "Contact"},
+    ]
 </script>
 
 <Navbar expand="md">
     <NavbarBrand href="/">Nyalpeh</NavbarBrand>
     <Nav class="me-auto" navbar>
+        {#each links as link}
         <NavItem>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href={link.path}>{link.display}</NavLink>
         </NavItem>
-        <NavItem>
-            <NavLink href="/contact">Contact</NavLink>
-        </NavItem>
+        {/each}
     </Nav>
 </Navbar>
