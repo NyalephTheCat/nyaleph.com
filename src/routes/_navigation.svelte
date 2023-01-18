@@ -13,7 +13,7 @@
 </script>
 
 <Navbar expand="md">
-    <NavbarBrand href="/">Nyalpeh</NavbarBrand>
+    <NavbarBrand href="/">Nyaleph</NavbarBrand>
     <Nav class="me-auto" navbar>
         {#each links as link}
         <NavItem>
